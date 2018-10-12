@@ -11,3 +11,8 @@ test("Testing one number", () => {
 
 	expect(StringCalculator.Add("5")).toBe(5);
 });
+
+test("Testing two numbers", () => {
+	
+	expect(StringCalculator.Add("10,10")).toBe(20);
+});
