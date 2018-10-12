@@ -8,6 +8,9 @@ var StringCalculator = {
 		if(numbers == "") {
 			return 0;
 			}
+		else {
+			return parseInt(numbers);
+		}
 	}
 };
 
