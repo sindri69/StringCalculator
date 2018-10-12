@@ -26,3 +26,7 @@ test("Testing new lines between numbers", () => {
 
 	expect(StringCalculator.Add("1\n2,3")).toBe(6);
 });
+
+it("should throw exception for negative inputs", () => {
+	expect(StringCalculator.Add("2,-4,3,-5")).toBe("Negatives not allowed: -4,-5");
+});
