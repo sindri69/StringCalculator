@@ -16,3 +16,8 @@ test("Testing two numbers", () => {
 	
 	expect(StringCalculator.Add("10,10")).toBe(20);
 });
+
+test("Testing unknown number of args", () => {
+
+	expect(StringCalculator.Add("10,10,10,10,10")).toBe(50);
+});

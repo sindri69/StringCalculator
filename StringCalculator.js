@@ -6,15 +6,14 @@ var StringCalculator = {
         return 0;
       }
     else {
- 
       var arrNumber = numbers.split(",");
-      if (numbers.length == 1) {
-        return parseInt(numbers);
+      var sum = 0;
+      for(i = 0; i < arrNumber.length; i++) {
+        sum += parseInt(arrNumber[i]);
       }
-      return parseInt(arrNumber[0]) + parseInt(arrNumber[1]);
+      return sum;
     }
     }
 };
  
 module.exports = StringCalculator;
-
