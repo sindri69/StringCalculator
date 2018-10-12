@@ -36,8 +36,11 @@ var StringCalculator = {
  
       var sum = 0;
       for(i = 0; i < arrNumber.length; i++) {
-        sum += parseInt(arrNumber[i]);
-      }
+	if (parseInt(arrNumber[i]) <= 1000) {
+		sum += parseInt(arrNumber[i]);
+	
+      	}
+	}
       return sum;
     }
     }

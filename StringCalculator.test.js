@@ -30,3 +30,8 @@ test("Testing new lines between numbers", () => {
 it("should throw exception for negative inputs", () => {
 	expect(StringCalculator.Add("2,-4,3,-5")).toBe("Negatives not allowed: -4,-5");
 });
+
+test("Testing numbers larger than 1000", () => {
+
+	expect(StringCalculator.Add("3,1001")).toBe(3);
+});
