@@ -21,3 +21,8 @@ test("Testing unknown number of args", () => {
 
 	expect(StringCalculator.Add("10,10,10,10,10")).toBe(50);
 });
+
+test("Testing new lines between numbers", () => {
+
+	expect(StringCalculator.Add("1\n2,3")).toBe(6);
+});
