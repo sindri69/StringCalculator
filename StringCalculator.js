@@ -34,6 +34,18 @@ var StringCalculator = {
         return "Negatives not allowed: " + negativeList;
       }
  
+	if (numbers.startsWith("//")) 
+	{
+		var delimiter = numbers.charAt(2);
+		var skip = numbers.substring(4);
+		var arrNumber = skip.split(delimiter);
+		var sum = 0;
+		for (i = 0; i < arrNumber.length; i++) {
+			sum += parseInt(arrNumber[i]);
+		}
+	return sum;
+	}
+
       var sum = 0;
       for(i = 0; i < arrNumber.length; i++) {
 	if (parseInt(arrNumber[i]) <= 1000) {
@@ -47,4 +59,5 @@ var StringCalculator = {
 };
  
 module.exports = StringCalculator;
-
+ 
+module.exports = StringCalculator;

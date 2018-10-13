@@ -35,3 +35,7 @@ test("Testing numbers larger than 1000", () => {
 
 	expect(StringCalculator.Add("3,1001")).toBe(3);
 });
+
+it("Testing custom delimiter", () => {
+	expect(StringCalculator.Add("//;\n1;2")).toBe(3);
+});
